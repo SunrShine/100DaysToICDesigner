@@ -1,28 +1,13 @@
 module SRLatch (
     input wire R,  //复位
     input wire S,   //置位
-    output reg Q,
-    output reg Q_n
+    output wire Q,
+    output wire Q_n
 );
     
-always @(*) begin
-    if (~S & ~R) begin
-        Q <= Q;
-        Q_n <= Q_n;
-    end
-    else if (S & ~R) begin
-        Q <= 1;
-        Q_n <= 0;
-    end 
-    else if(~S & R)begin
-        Q <= 0;
-        Q_n <= 1;
-    end
-    else begin
-        Q <= 0;
-        Q_n <= 0;
-    end
-end
+
+   nor nor1(Q, R, Q_n); 
+   nor nor2(Q_n, S, Q); 
 
 endmodule
 

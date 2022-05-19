@@ -3,5 +3,7 @@
 
 /HalfaddTestbench
 
+QuartusModelSim
+
 *.vcd
 *.SunR
