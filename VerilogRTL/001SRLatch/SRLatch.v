@@ -5,9 +5,14 @@ module SRLatch (
     output wire Q_n
 );
     
+    wire q, nq;
 
-   nor nor1(Q, R, Q_n); 
-   nor nor2(Q_n, S, Q); 
+   nor nor1(Q, R, nq); 
+   nor nor2(Q_n, S, q); 
 
+    assign Q = q;
+    assign Q_n =Q_n;
 endmodule
 
+ git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
