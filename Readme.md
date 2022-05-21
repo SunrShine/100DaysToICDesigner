@@ -5,3 +5,15 @@
 # 如何使用
 本人使用iverlog + vscode进行编写测试。使用vivado或者quartus应该也是可以的。
     PS：文件iverlogRun.bat 是为了方便写的命令行脚本。
+
+
+
+# modelsim 常用的指令
+vlib work  ： 当前目录建立工作文件夹
+
+vlog ``.\sim\tb_top.v``   ``.\src\top.v``  : 仿真编译
+
+vsim ``tb_top`` -voptargs=+acc  ：  开始仿真
+
+
+# iVerilog 常用的指令
