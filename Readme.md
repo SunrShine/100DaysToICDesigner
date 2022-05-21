@@ -17,3 +17,10 @@ vsim ``tb_top`` -voptargs=+acc  ：  开始仿真
 
 
 # iVerilog 常用的指令
+
+iverilog -o   $ fileName $  .\tb_
+
+
+vvp   $ fileName $
+
+gtkwave %target%.vcd  查看对应的vcd波形图
