@@ -4,7 +4,7 @@ module DLatch (
     output wire Q,
     output wire Q_n
 );
-    
+    //注意声明的每一个wire变量都是对应电路图当中的一条线的。
     wire   nd, wnr,wns,wq,wnq;
 
     not  not1(nd, D);

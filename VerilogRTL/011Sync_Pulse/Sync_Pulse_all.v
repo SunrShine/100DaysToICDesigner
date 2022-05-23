@@ -1,4 +1,4 @@
-module Sync_Pulse (
+module Sync_Pulse_all (
     input  wire  clka,
     input  wire  clkb,
     input  wire  rst_n,

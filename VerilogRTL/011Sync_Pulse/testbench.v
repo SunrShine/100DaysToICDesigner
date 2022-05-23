@@ -1,4 +1,4 @@
-`include "Sync_Pulse.v"
+`include "Sync_Pulse_all.v"
 `timescale 1ns/1ns
 
 module testbench;
@@ -13,7 +13,7 @@ module testbench;
     reg pulse_ina;
     
     wire pulse_outb, signal_outb;
-    Sync_Pulse syncPluse(
+    Sync_Pulse_all syncPluse(
     .clka(clka),
     .clkb(clkb),
     .rst_n(rst_n),
@@ -24,7 +24,7 @@ module testbench;
     );
 
     initial begin
-    $dumpfile("Sync_Pulse.vcd");
+    $dumpfile("Sync_Pulse_all.vcd");
     $dumpvars(0,testbench);
 
     clka = 0;

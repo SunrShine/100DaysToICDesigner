@@ -13,6 +13,3 @@ module SRLatch (
     assign Q = q;
     assign Q_n =Q_n;
 endmodule
-
- git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
