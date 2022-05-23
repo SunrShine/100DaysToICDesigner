@@ -7,7 +7,7 @@ module DTrigger (
 );
 
 
-
+//D触发器使用行为级描述，
 always @(posedge clk ) begin
     outq <= data;
 end
