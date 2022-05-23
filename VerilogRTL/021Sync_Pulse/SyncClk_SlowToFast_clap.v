@@ -1,4 +1,4 @@
-module Clk_SlowToFast_clap(
+module SyncClk_SlowToFast_clap(
 
     input wire clk_slow,//异步慢时钟
     input wire clk_fast,//目的快时钟域市政

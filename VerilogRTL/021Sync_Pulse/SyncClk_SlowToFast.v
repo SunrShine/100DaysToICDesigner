@@ -1,5 +1,5 @@
 //慢时钟域到快时钟域使用两级触发器
-module Clk_SlowToFast (
+module SyncClk_SlowToFast (
     input wire clk_slow,
     input wire clk_fast,
     input wire rst_n,

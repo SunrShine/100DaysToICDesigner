@@ -18,7 +18,7 @@ vsim ``tb_top`` -voptargs=+acc  ：  开始仿真
 
 # iVerilog 常用的指令
 
-iverilog -o   $ fileName $  .\tb_
+  .\tb_
 
 
 vvp   $ fileName $
