@@ -21,13 +21,13 @@ always @(posedge clk_fast or negedge rst_n) begin
     if(rst_n == 1'b0)begin
         signal_in_widen <= 1'b0;
     end
-    else if(signal_in == 1'b1111)begin
+    else if(signal_in == 1'b1)begin
         signal_in_widen <= 1'b1;
     end
 
     
     //将延长信号拉低
-    else if(signal_out_posedge[1] = 1'b1)
+    else if(signal_out_posedge[1] == 1'b1)
         signal_in_widen <= 1'b0;
     else
         signal_in_widen <= signal_in_widen;
