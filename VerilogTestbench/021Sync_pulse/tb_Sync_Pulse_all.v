@@ -1,7 +1,6 @@
-`include "Sync_Pulse_all.v"
 `timescale 1ns/1ns
 
-module testbench;
+module tb_Sync_Pulse_all;
 
 
 
@@ -25,7 +24,7 @@ module testbench;
 
     initial begin
     $dumpfile("Sync_Pulse_all.vcd");
-    $dumpvars(0,testbench);
+    $dumpvars(0,tb_Sync_Pulse_all);
 
     clka = 0;
     clkb = 0;
@@ -38,7 +37,7 @@ module testbench;
     #10  pulse_ina = 0;
 
     #80;
-    $finish;
+    $stop;
     
     end
 

@@ -3,8 +3,16 @@
 
 /HalfaddTestbench
 
-/QuartusModelSim
-/SystemVerilog
+
+db
+incremental_db
+output_files
+
+
+work
+001flow_led
+transcript
+*.wlf
 
 *.vcd
 *.SunR

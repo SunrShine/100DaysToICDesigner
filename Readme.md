@@ -18,9 +18,10 @@ vsim ``tb_top`` -voptargs=+acc  ：  开始仿真
 
 # iVerilog 常用的指令
 
-  .\tb_
-
-
-vvp   $ fileName $
+```bush
+iverilog -o .\VerilogTestbench\021Sync_pulse\wave.SunR .\VerilogTestbench\021Sync_pulse\tb_Sync_Pulse_all.v .\VerilogRTL\021Sync_Pulse\Sync_Pulse_all.v
+vvp  .\VerilogTestbench\021Sync_pulse\wave.SunR  
+```
+vvp  -n  $ fileName $
 
 gtkwave %target%.vcd  查看对应的vcd波形图

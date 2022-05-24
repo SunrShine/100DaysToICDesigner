@@ -10,3 +10,5 @@ iverilog -o wave.SunR  .\tb_
 vvp wave.SunR
 
 rem  use gtkwave %target%.vcd  查看对应的vcd波形图
+
+
