@@ -46,4 +46,7 @@ module tb_Sync_Pulse_all;
 
 endmodule //testbench
 
-    
+//modelsim仿真命令
+//vlib work 建立工作目录“一次就行了”
+//vlog .\tb_Sync_Pulse_all.v ..\..\VerilogRTL\021Sync_Pulse\Sync_Pulse_all.v
+//vsim .\tb_Sync_Pulse_all.v -voptargs=+acc    
