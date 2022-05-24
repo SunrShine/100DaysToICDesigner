@@ -32,7 +32,7 @@ initial begin
     clk_fast<=1'b0;
     clk_slow<=1'b0;
     signal_in <= 1'b0;
-    rst_n<=1'bx;
+    rst_n<=1'b0;
     #(clk_fast_PERIOD*2) rst_n<=1;
     
     #(clk_slow_PERIOD*2) signal_in <= 1;

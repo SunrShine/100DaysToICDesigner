@@ -8,9 +8,9 @@ module SyncClk_FastToSlow (
     output wire signal_out
 );
 
-reg signal_in_widen;
-reg signal_out_reg;
-reg [1:0] signal_out_posedge;
+reg signal_in_widen ;
+reg signal_out_reg ;
+reg [1:0] signal_out_posedge ;
 
 
 //把快时钟域的控制信号根据进行延长合适的时间

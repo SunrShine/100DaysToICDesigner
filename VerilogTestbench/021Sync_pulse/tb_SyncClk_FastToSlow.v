@@ -24,10 +24,10 @@ always #(clk_slow_PERIOD/2) clk_slow=~clk_slow;
 
 initial begin
     //初始化
-    clk_fast<=1'b0;
-    clk_slow<=1'b0;
+    clk_fast<=1'b1;
+    clk_slow<=1'b1;
     signal_in <= 1'b0;
-    rst_n<=1'bx;
+    rst_n<=1'b0;
     //开始使能，（结束reset）
     #(clk_fast_PERIOD*2) rst_n<=1;
     
