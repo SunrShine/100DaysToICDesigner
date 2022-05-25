@@ -19,5 +19,20 @@ module DLatch (
     assign Q_n = wnq;
 
 
+/*
+不带时钟的always模块生成组合逻辑电路，
+可用来生成 latch 代码如下：
+
+always @(*)begin
+    if(enable)
+        Q <= data;
+    else 
+        Q <= 0;
+end
+
+
+*/
+
+
 endmodule
 
