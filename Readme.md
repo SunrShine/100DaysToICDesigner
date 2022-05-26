@@ -17,7 +17,6 @@ vlog ``.\sim\tb_top.v``   ``.\src\top.v``  : 仿真编译
 
 vsim ``tb_top`` -voptargs=+acc  ：  开始仿真
 
-
 # iVerilog 常用的指令
 
 ```bush
