@@ -27,7 +27,6 @@ always @(*)begin
     if(enable)
         Q <= data;
     else 
-        Q <= 0;
 end
 
 
