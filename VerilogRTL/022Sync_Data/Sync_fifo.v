@@ -76,3 +76,5 @@ module Sync_fifo #(parameter WIDTH = 8) (
     assign Empty_Sig = (count == 0) ? 1 : 0;
     assign Full_Sig  = (count == 0) ? 1 : 0;
 endmodule 
+
+
