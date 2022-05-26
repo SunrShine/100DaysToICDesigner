@@ -44,7 +44,7 @@ module Sync_fifo #(parameter WIDTH = 8) (
         end
     end
  
-    //数据读出和写入操作
+   //数据读出和写入操作
     always @(posedge clk or negedge rst_n) begin
         if (rst_n == 1'b0) begin
             Read_Data <= 0;
@@ -75,7 +75,4 @@ module Sync_fifo #(parameter WIDTH = 8) (
     //设置空信号和满信号
     assign Empty_Sig = (count == 0) ? 1 : 0;
     assign Full_Sig  = (count == 0) ? 1 : 0;
-
-
-    
-endmodule                                                                                                                                                                                                                                                                                                                                                                    
+endmodule 
