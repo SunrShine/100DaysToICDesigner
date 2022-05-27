@@ -1,4 +1,4 @@
-module halfSuber (
+module halfSuber_1 (
     input wire Subed,  //被减数
     input wire suber,  //减数
 

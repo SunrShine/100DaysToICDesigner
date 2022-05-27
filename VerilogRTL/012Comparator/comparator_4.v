@@ -39,13 +39,3 @@ assign ANS0 = ANS1 ? 0 : ~ANS2;
 endmodule
 
 
-
-// Error (10170): Verilog HDL syntax error at 
-// comparator_4.v(16) near text: "genvar";
-// expecting an identifier ("genvar" is a reserved keyword ). 
-// Check for and fix any syntax errors that appear immediately before or at the specified keyword. 
-// The Intel FPGA Knowledge Database contains many articles with specific details  on how to resolve this error.
-// Visit the Knowledge Database 
-// at https://www.altera.com/support/support-resources/knowledge-base/search.html
-// and search for this specific error message number.
-
