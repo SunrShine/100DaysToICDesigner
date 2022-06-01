@@ -81,12 +81,12 @@ interface abr_if(input bit clk);
     modport TEST (
     input grant, clk,
     output request, rst);
-    
+
 endinterface
     
 endmodule
 
-endmodule
+
 `default_nettype wire
 
 
