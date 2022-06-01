@@ -10,7 +10,7 @@ module DLatch (
     not  not1(nd, D);
 
     and  and1(wns, nd, C);
-    and  and1(wnr, d, C);
+    and  and2(wnr, d, C);
 
     nor  nor1(wq, wns, wnq );
     nor  nor2(wnq, wnr, wq);

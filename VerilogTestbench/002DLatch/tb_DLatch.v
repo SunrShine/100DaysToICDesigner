@@ -4,12 +4,11 @@
 
 module tb_DLatch;
 
-    reg S, R, C;
+    reg  D, C;
     wire Q, Q_n;
 
     DLatch sr(
-        .S(S),
-        .R(R),
+        .D(D),
         .C(C),
         .Q(Q),
         .Q_n(Q_n)
@@ -61,3 +60,5 @@ module tb_DLatch;
     end
     
 endmodule
+//iverlog 运行命令：
+// iverilog -o  wave  .\tb_dlatch.v  ..\..\VerilogRTL\002DLatch\DLatch.v
