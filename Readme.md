@@ -11,7 +11,6 @@ ps:写testbench真的折磨
 
 
 
-
 # iVerilog 常用的指令 （不支持SystemVerilog，测试不香了)
 ```bush
 iverilog -o ...\wave.SunR ...\tb_Sync_Pulse_all.v ...\Sync_Pulse_all.v
