@@ -1,8 +1,9 @@
-module tb_fdiv8_7;
-
+module tb_fdiv5_3;
+    
 reg clk;
 reg rst_n;
 wire div_clk;
+
 
 localparam CLK_T = 10;
 localparam CLK_TM2 = 20;
@@ -10,7 +11,7 @@ localparam CLK_TM3 = 30;
 
 
 
-fdiv8_7   t1(
+fdiv5_3   t1(
     .rst_n (rst_n),
     .clk (clk),
     .div_clk(div_clk)
@@ -42,10 +43,9 @@ always begin
 
 end
 
+endmodule //tb_fdiv5_3
 
-endmodule //tb_fdiv8_7
 
+// vlog .\tb_fdiv5_3.v  ..\..\VerilogRTL\023div_clk\fdiv5_3.v
 
-// vlog .\tb_fdiv8_7.v  ..\..\VerilogRTL\023div_clk\fdiv8_3.v
-
-// vsim  .\tb_fdiv8_7.v -voptargs=+acc
+// vsim  .\tb_fdiv5_3.v -voptargs=+acc
