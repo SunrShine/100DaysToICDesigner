@@ -25,7 +25,7 @@ always @(posedge clk or negedge rst_n) begin
     end
 end
 
-always @(posedge clk or negedge rst_n) begin
+always @(posedge clk or negedge rst_n) begin  //这样写是错的
     if(~rst_n)begin
         cnt_n <= 0;
         clk_n <= 1;
