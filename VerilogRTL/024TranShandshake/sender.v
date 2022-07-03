@@ -20,5 +20,9 @@ always @(posedge clk_t or negedge rst) begin
     end
 end
 
+wire pose_start;
+assign pose_start = start & (~start_reg); //检测上升沿
+
+reg 
 
 endmodule
