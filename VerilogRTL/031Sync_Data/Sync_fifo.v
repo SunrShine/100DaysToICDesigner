@@ -6,8 +6,8 @@ module Sync_fifo #(parameter WIDTH = 8) (
     input wire[WIDTH-1 : 0] Write_Data,
 
     output reg[WIDTH-1 : 0 ] Read_Data,
-    output reg Empty_Sig,
-	output reg Full_Sig,
+    output wire Empty_Sig,
+	output wire Full_Sig,
 );
 
     parameter DEPTH = 1 << WIDTH;
