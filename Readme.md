@@ -1,8 +1,6 @@
 # 关于本项目 
 
-卷，加速
-
-ps:写testbench真的折磨
+写Verilog的记录
 # 如何使用
 
 使用iverlog + vscode进行编写测试。使用vivado或者quartus应该也是可以的。
