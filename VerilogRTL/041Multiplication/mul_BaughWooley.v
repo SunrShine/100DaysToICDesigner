@@ -18,7 +18,7 @@ genvar i,j;
 generate
     for (i=0; i<WIDTH-1 ; i=i+1) begin
         for (j=0; j<WIDTH-1 ;j=j+1 ) begin
-            assign xy[i][j] = X[i] & Y[i];
+            assign xy[i][j] = X[i] & Y[j];
         end
     end
 endgenerate

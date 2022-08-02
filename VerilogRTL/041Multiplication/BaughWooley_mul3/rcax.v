@@ -1,4 +1,4 @@
-module rippleCarryAdder #(
+module rcax #(
     parameter width = 4
 ) (
     input [width-1:0] A,
@@ -38,4 +38,3 @@ module fullAdder_1(
     assign s = a ^ b ^ c_i;
     assign c_o = a & b | (a ^ b) & c_i;
 endmodule
-
