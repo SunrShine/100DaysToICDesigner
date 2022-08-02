@@ -1,7 +1,7 @@
-module asyc_fifo_ram 
+module asyn_fifo_ram 
 #(
-    parameter DATA_WIDTH = 32;
-    parameter ADDR_WIDTH = 6;
+    parameter DATA_WIDTH = 32,
+    parameter ADDR_WIDTH = 6
 )
 (
     output wire [DATA_WIDTH-1:0] read_data,
