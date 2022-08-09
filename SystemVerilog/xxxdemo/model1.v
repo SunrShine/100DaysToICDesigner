@@ -1,4 +1,4 @@
-module module1(
+module model1(
     input wire clk,
     input wire rst_n,
     input wire sel,

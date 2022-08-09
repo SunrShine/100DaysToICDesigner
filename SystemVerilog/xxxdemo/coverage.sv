@@ -1,12 +1,12 @@
 module coverage( model1_bfm bfm);
-    logic in;
-    logic out;
-    logic [2:0] state;
 
-    covergroup cg_cov
-        coverpoint in;
-        coverpoint out;
-        coverpoint state;
+    logic sel;
+    logic flag;
+
+    covergroup cg_cov;
+        coverpoint sel;
+        coverpoint flag;
+
     endgroup
 
     cg_cov oc;
@@ -14,9 +14,8 @@ module coverage( model1_bfm bfm);
         oc = new();
         forever begin
             @(posedge bfm.clk);
-            in = bfm.in;
-            out = bfm.out;
-            state =  bfm.state;
+            sel = bfm.sel;
+            flag = bfm.flag;
             oc.sample();
         end
     end
