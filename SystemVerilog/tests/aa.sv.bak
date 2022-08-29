@@ -6,7 +6,7 @@ fork
     $display("AAA");
     $display("BBB");
     $display("CCC");
-join_any
+join
 
 
  $display("DDD");

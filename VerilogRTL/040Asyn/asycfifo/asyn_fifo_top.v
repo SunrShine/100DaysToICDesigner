@@ -18,7 +18,7 @@ module asyn_fifo_top
     input       wire                        read_clk,
     input       wire                        read_rst_n
 );
-    
+    //w_开头表示连接线
     wire [ADDR_WIDTH-1:0] w_write_addr, w_read_addr;
     wire [ADDR_WIDTH:0] w_write_ptr, w_read_ptr;
     wire [ADDR_WIDTH:0] w_sync_write_ptr, w_sync_read_ptr;
